@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-navegacion.component.css']
 })
 export class MenuNavegacionComponent implements OnInit {
+
   constructor() { }
+
   ngOnInit(): void {
   }
+
 }

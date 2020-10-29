@@ -1,0 +1,23 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1>Aprendices especialización</h1>
+        <small>MCDS - REGIONAL CALDAS</small>
+        <hr>
+
+        <div class="card-columns">
+            <div class="card animated fadeIn fast" *ngFor="let student of students; let i = index">
+                <!-- <img class="card-img-top" src="{{student.img}}" alt="Card image cap"> -->
+                <img class="card-img-top img-fluid" [src]="student.img" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">{{student.nombre}}</h4>
+                    <p class="card-text">{{student.titulo}}</p>
+                    <p class="card-text"><small class="text-muted">{{student.habilidad}}</small></p>
+                    <!-- <button type="button" class="btn btn-outline-primary btn-block">
+            Ver más...
+          </button> -->
+                    <a [routerLink]="['/student',i]" class="btn btn-outline-primary">Ver más información</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
